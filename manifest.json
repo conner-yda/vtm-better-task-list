@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Task Manager Styler",
+  "version": "1.0",
+  "description": "Applies custom CSS to the task-manager.biz task list page.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://task-manager.biz/partner/VMKA/tasks/task-list*"],
+      "css": ["styles.css"],
+      "run_at": "document_start" 
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+/* Injected by Task Manager Styler Extension */
+
+a.title, 
+.in-project, 
+.task-company-address, 
+.task-company-phone, 
+a.task-company-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.in-project, 
+.in-project a {
+	/* You had display: none !important; below, 
+	   so these styles might be redundant unless display: none is removed */
+	font-style: italic;
+	opacity: 0.75; 
+	display: none !important; /* Hides the project info completely */
+}
+
+th.mat-mdc-header-cell, 
+td.mat-mdc-cell {
+	padding: 0px 12px !important;
+}
+
+.duedate-cell span:last-child, 
+app-task-icon, 
+.visibility-component {
+	display: none !important;
+}
+
+.mat-column-status, 
+.mat-column-account {
+	width: 174px;
+}
+
+/* Note: CSS nesting like '& .select-text-container' is relatively new 
+   and might not work in very old browsers, but is fine for modern Chrome */
+.mat-column-dueDate, 
+.mat-column-assignee, 
+.mat-column-actions, 
+.mat-column-address {
+	width: 65px;
+	
+	& .select-text-container {
+		justify-content: center !important;
+	}
+}
+
+.mat-column-status .mdc-evolution-chip-set__chips, 
+.mat-column-status .sort-header-container {
+	justify-content: flex-end !important;
+}
+
+.mat-column-status .sort-header-container {
+	margin-right: 8px;
+}
+
+.sort-header-button {
+	gap: 0.1rem;
+}
+
+td.mat-mdc-cell, 
+.mat-mdc-header-cell, 
+.mat-mdc-table-sticky:last-child {
+	border: 0 !important;
+}
+
+.glxy-page {
+	max-width: 1400px !important;
+	margin: auto !important;
+}
+
+td.mat-column-account * {
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.task-title-cell {
+	padding: 6px 0 !important;
+}
+
+.mat-drawer-content {
+	/* Be cautious with hiding overflow here if scrolling is needed */
+	overflow: hidden; 
+}
+
+.logo-container {
+	display: none !important;
+}
+
+/* Style rows with 'on-hold' status */
+tr:has(span.mdc-evolution-chip__text-label.mat-mdc-chip-action-label[ws-status="on-hold"]) {
+		opacity: 0.3;
+}
+
+/* End of Injected Styles */
