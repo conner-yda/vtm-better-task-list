@@ -1,8 +1,8 @@
 mat-sidenav.mat-drawer.mat-sidenav.panel.mat-drawer-end.mat-sidenav-fixed.mat-drawer-over.mat-drawer-opened {
-	z-index: 100000;
+	z-index: 1000;
 }
 .ck.ck-balloon-panel.ck-balloon-panel_caret_ne.ck-balloon-panel_visible {
-	z-index: 100001;
+	z-index: 1001;
 }
 
 a.title, 
