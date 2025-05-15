@@ -1,4 +1,6 @@
-/* Injected by Task Manager Styler Extension */
+mat-sidenav.mat-drawer.mat-sidenav.panel.mat-drawer-end.mat-sidenav-fixed.mat-drawer-over.mat-drawer-opened {
+	z-index: 100000;
+}
 
 a.title, 
 .in-project, 
@@ -12,11 +14,9 @@ a.task-company-name {
 
 .in-project, 
 .in-project a {
-	/* You had display: none !important; below, 
-	   so these styles might be redundant unless display: none is removed */
 	font-style: italic;
 	opacity: 0.75; 
-	display: none !important; /* Hides the project info completely */
+	display: none !important;
 }
 
 th.mat-mdc-header-cell, 
@@ -35,8 +35,6 @@ app-task-icon,
 	width: 174px;
 }
 
-/* Note: CSS nesting like '& .select-text-container' is relatively new 
-   and might not work in very old browsers, but is fine for modern Chrome */
 .mat-column-dueDate, 
 .mat-column-assignee, 
 .mat-column-actions, 
@@ -84,7 +82,6 @@ td.mat-column-account * {
 }
 
 .mat-drawer-content {
-	/* Be cautious with hiding overflow here if scrolling is needed */
 	overflow: hidden; 
 }
 
@@ -92,9 +89,6 @@ td.mat-column-account * {
 	display: none !important;
 }
 
-/* Style rows with 'on-hold' status */
 tr:has(span.mdc-evolution-chip__text-label.mat-mdc-chip-action-label[ws-status="on-hold"]) {
 		opacity: 0.3;
 }
-
-/* End of Injected Styles */
