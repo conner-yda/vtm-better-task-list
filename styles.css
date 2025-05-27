@@ -14,10 +14,10 @@ mat-sidenav-content:has(app-task-attachment-preview) {
 	}
 }
 
-app-task-attachment-preview div div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+app-task-attachment-preview > div {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 mat-sidenav .mat-sidenav-fixed.mat-drawer-over.mat-drawer-opened { 
