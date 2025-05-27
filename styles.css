@@ -8,16 +8,16 @@ mat-sidenav.mat-drawer.mat-sidenav.panel.mat-drawer-end.mat-sidenav-fixed.mat-dr
 mat-sidenav-content:has(app-task-attachment-preview) { 
 	background: #eee;
 	
-	div div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	
 	img { 
 		max-width: 1080px; 
 		
 	}
+}
+
+app-task-attachment-preview div div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 mat-sidenav .mat-sidenav-fixed.mat-drawer-over.mat-drawer-opened { 
