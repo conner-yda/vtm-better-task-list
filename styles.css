@@ -5,6 +5,21 @@ mat-sidenav.mat-drawer.mat-sidenav.panel.mat-drawer-end.mat-sidenav-fixed.mat-dr
 	z-index: 1001;
 }
 
+mat-sidenav-content:has(app-task-attachment-preview) { 
+	background: #eee;
+	
+	div div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	img { 
+		max-width: 1080px; 
+		
+	}
+}
+
 a.title, 
 .in-project, 
 .task-company-address, 
