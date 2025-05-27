@@ -20,6 +20,10 @@ mat-sidenav-content:has(app-task-attachment-preview) {
 	}
 }
 
+mat-sidenav .mat-sidenav-fixed.mat-drawer-over.mat-drawer-opened { 
+	z-index: 1000 !important;
+}
+
 a.title, 
 .in-project, 
 .task-company-address, 
